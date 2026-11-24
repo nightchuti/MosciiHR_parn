@@ -5,6 +5,12 @@ const pages = {
 };
 function render() {
   const key = Object.hasOwn(pages, location.hash.slice(1)) ? location.hash.slice(1) : 'booking';
+  const examples = {
+    booking: 'รถส่วนกลาง 01 · 09.00–11.00 น. · ไปสำนักงานลูกค้า',
+    leave: 'ลาพักร้อน · 1 วัน · รอหัวหน้าอนุมัติ',
+    time: 'เวลาเข้า 08.45 น. · ขาดเวลาออก · รอพนักงานกรอก'
+  };
+  document.querySelector('#example').textContent = 'รายการตัวอย่าง — ' + examples[key];
   const [title, description, fields] = pages[key];
   document.querySelectorAll('nav a').forEach(link => link.setAttribute('aria-current', link.hash === '#' + key ? 'page' : 'false'));
   document.querySelector('#heading').textContent = title;
@@ -21,16 +27,3 @@ function render() {
 }
 window.addEventListener('hashchange', render);
 render();
-document.querySelector('#check').onclick = async function () {
-  const status = document.querySelector('#status');
-  this.disabled = true;
-  status.textContent = 'กำลังตรวจสอบ…';
-  try {
-    const response = await fetch('/api/database', {cache: 'no-store'});
-    status.textContent = (await response.json()).message;
-  } catch {
-    status.textContent = 'ติดต่อเว็บเซิร์ฟเวอร์ไม่ได้';
-  } finally {
-    this.disabled = false;
-  }
-};

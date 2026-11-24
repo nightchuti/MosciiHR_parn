@@ -1,6 +1,6 @@
 # MosciiHR
 
-เว็บตั้งต้น ASP.NET Core บน .NET 10 มีหน้าทดลองจองรถ ยื่นลา และใบลงเวลา พร้อมปุ่มตรวจ SQL Server ด้วย SELECT DB_NAME() แบบอ่านอย่างเดียว ฟอร์มทั้งสามเป็นต้นแบบและยังไม่บันทึกข้อมูล
+เว็บตั้งต้น ASP.NET Core บน .NET 10 มีหน้าทดลองจองรถ ยื่นลา และใบลงเวลา พร้อม API ตรวจ SQL Server ด้วย SELECT DB_NAME() แบบอ่านอย่างเดียว ฟอร์มทั้งสามเป็นต้นแบบและยังไม่บันทึกข้อมูล
 
 ## เริ่มบนเครื่องนักพัฒนา
 
@@ -12,6 +12,8 @@ $env:Database__Password = [System.Net.NetworkCredential]::new('', (Read-Host 'SQ
 dotnet run --urls http://localhost:5080
 ~~~
 
-เปิด http://localhost:5080 แล้วกด **ตรวจการเชื่อมต่อ** ระบบใช้ mcb.moscii.com,1455 ฐาน HRMOSCII และบัญชีพัฒนา trainee ตาม appsettings.json รหัสผ่านอยู่ใน environment ของ session นี้ หลังเลิกใช้งานกด Ctrl+C และรัน `Remove-Item Env:Database__Password` หากไม่มีรหัสผ่าน ยังเปิดดูหน้าตัวอย่างได้
+เปิด http://localhost:5080 เพื่อดูเดโม หรือเปิด /api/database เพื่อตรวจฐานข้อมูล ระบบใช้ mcb.moscii.com,1455 ฐาน HRMOSCII และบัญชีพัฒนา trainee ตาม appsettings.json รหัสผ่านอยู่ใน environment ของ session นี้ หลังเลิกใช้งานกด Ctrl+C และรัน `Remove-Item Env:Database__Password` หากไม่มีรหัสผ่าน ยังเปิดดูหน้าตัวอย่างได้
 
 การเชื่อมต่อตรวจใบรับรอง SQL Server เครื่องพัฒนาต้องเชื่อถือ CA ที่ออกใบรับรอง โครงเริ่มต้นนี้ใช้สำหรับรันภายในเครื่อง ขั้นตอนถัดไปตาม [สเปก](MOSCIIHR_SPEC.md) ได้แก่ LDAPS สิทธิ์ผู้ใช้ การสร้างตาราง และการบันทึกคำขอ
+
+สำหรับการสาธิตอย่างเดียว เปิดไฟล์ wwwroot/index.html ในเบราว์เซอร์ได้ทันที หน้าเดโมใช้ข้อมูลสมมติภายในเครื่อง

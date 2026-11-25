@@ -1,0 +1,140 @@
+/* Match the appended booking sections to the original employee-service panel. */
+.booking-workflow{display:grid;gap:16px;margin-top:0}
+.booking-workflow #employee-booking-view{display:grid;gap:16px}
+.booking-workflow .fleet-view-selector{display:flex;justify-content:flex-end;padding:14px 18px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.booking-workflow .fleet-view-selector label{grid-template-columns:auto minmax(220px,360px);align-items:center;justify-content:end;font-size:15px}
+.booking-workflow .booking-panel,.booking-workflow .list-section,.booking-workflow .admin-role-section{margin:0}
+.booking-workflow .section-heading h2,.admin-role-section>.section-heading h2{font-size:26px}
+.booking-workflow .section-heading p,.admin-role-section>.section-heading p{font-size:16px}
+.booking-workflow .list-section{padding:clamp(20px,3vw,38px);border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:0 8px 32px #20394f08}
+.booking-workflow .section-heading.compact{margin:0 0 16px}
+.booking-workflow .section-heading.compact h2{font-size:26px}
+.booking-workflow .form-grid label,.booking-workflow label,.admin-role-section label{font-size:15px}
+.booking-workflow input,.admin-role-section input,.admin-role-section select{font-size:16px}
+.booking-workflow .steps li{font-size:15px}
+.booking-workflow .step-pill{font-size:13px}
+.booking-workflow .button,.admin-role-section .button{font-size:15px}
+.booking-workflow .hint{font-size:14px}
+.booking-workflow .availability-heading strong{font-size:16px}
+.booking-workflow .availability-heading span{font-size:14px}
+.booking-workflow .vehicle-option-body{border-radius:8px}
+.booking-workflow .vehicle-option input:checked+.vehicle-option-body{border-color:#3875b4;background:#ebf5ff;box-shadow:inset 0 -2px #3875b4}
+.booking-workflow .vehicle-option-body>.vehicle-icon{border-radius:9px;background:#e3edf7;color:#20598c}
+.booking-workflow .vehicle-info strong{font-size:16px}
+.booking-workflow .vehicle-info small{color:var(--ink);font-size:15px;font-weight:500}
+.booking-workflow .review{border-color:var(--line);border-radius:6px;background:#eef4fa}
+.booking-workflow .review-head strong{font-size:18px}
+.booking-workflow .review-head span{color:var(--muted);font-size:14px}
+.booking-workflow .summary-list{border-color:#d9e3ea;font-size:15px}
+.booking-workflow .result{border-color:#cedbe7;border-radius:6px;background:#eef4fa}
+.booking-workflow .result strong{font-size:20px}
+.booking-workflow .result span{font-size:16px}
+.booking-workflow .result small{font-size:14px}
+.booking-workflow .booking-list{gap:10px}
+.booking-workflow .booking-row{border:0;border-left:3px solid #5795bc;border-radius:4px;background:#eef4fa;padding:12px 15px}
+.booking-workflow .booking-row-main strong{font-size:16px}
+.booking-workflow .booking-row-main span{font-size:14px}
+.booking-workflow .booking-row-main small{font-size:13px}
+.booking-workflow .status{font-size:13px}
+.booking-workflow .text-button{font-size:14px}
+.admin-role-section{display:grid;gap:16px;padding-top:4px}
+.admin-role-section>.section-heading{margin:0;padding:clamp(20px,3vw,38px);border:1px solid var(--line);border-radius:16px;background:#fff}
+.admin-role-section>.admin-grid>.card,.admin-role-section>.admin-calendar{margin:0}
+.admin-role-section .card-title h3{font-size:20px}
+.admin-role-section .card-title p{font-size:13px}
+.admin-role-section .admin-row-info strong{font-size:15px}
+.admin-role-section .admin-row-info span{font-size:13px}
+.admin-role-section .mini-button{font-size:13px}
+.admin-role-section .request-row h3{font-size:15px}
+.admin-role-section .request-number,.admin-role-section .request-details,.admin-role-section .request-actions input,.admin-role-section .small-button,.admin-role-section .last-reason{font-size:13px}
+.admin-role-section .status{font-size:13px}
+.admin-role-section .calendar-weekday,.admin-role-section .calendar-day-number,.admin-role-section .calendar-event,.admin-role-section .calendar-more{font-size:12px}
+.booking-workflow .button.primary,.admin-role-section .button.primary{background:#20598c}
+.booking-workflow .text-button,.admin-role-section .text-button{color:#20598c}
+.booking-workflow .steps .current{color:#20598c}
+.booking-workflow .steps .current i,.booking-workflow .steps .done i{border-color:#3875b4;background:#3875b4}
+.booking-workflow .steps .done{color:#3875b4}
+.booking-workflow .step-pill{border-color:#d5e3f0;color:#20598c}
+.booking-workflow .review,.booking-workflow .result{border-color:#cbdff1;background:#eef5fc}
+.booking-workflow .summary-list{border-color:#d5e3f0}
+.booking-workflow .result-mark{background:#d8e8f8;color:#20598c}
+.booking-workflow .result span{color:#3d5d7c}
+.booking-workflow .status-confirmed,.booking-workflow .status-active{background:#e3edf7;color:#20598c}
+.booking-workflow .number-icon,.booking-workflow .number-icon.violet{background:#e3edf7;color:#20598c}
+.request-notice{display:flex;align-items:center;gap:12px;padding:13px 17px;border:1px solid #cbdff1;border-radius:12px;background:#ebf5ff;color:#20598c;font-size:15px;font-weight:700}
+.notice-icon{display:grid;place-items:center;width:26px;height:26px;flex:none;border-radius:50%;background:#3875b4;color:white;font-weight:800}
+.calendar-description{margin:0 0 10px;color:var(--muted);font-size:14px}
+.admin-section-heading{margin:4px 0 -4px}
+.admin-role-section .request-list{display:grid;grid-template-columns:1fr;gap:0}
+.admin-role-section .request-row{display:grid;grid-template-columns:130px auto minmax(170px,1fr) minmax(260px,1.6fr) minmax(320px,auto);align-items:center;gap:12px;padding:13px 8px;border-bottom:1px solid #e3eaf1}
+.admin-role-section .request-row:first-child{border-top:1px solid #e3eaf1}
+.admin-role-section .request-top{display:contents}
+.admin-role-section .request-number{grid-column:1;grid-row:1;color:#526d91}
+.admin-role-section .request-top .status{grid-column:2;grid-row:1}
+.admin-role-section .request-row h3{grid-column:3;grid-row:1;margin:0}
+.admin-role-section .request-details{grid-column:4;grid-row:1}
+.admin-role-section .request-actions{grid-column:5;grid-row:1;margin:0}
+.admin-role-section .last-reason{grid-column:3/-1;margin:0;padding:4px 0 0;border:0}
+.admin-role-section .status-pending{background:#ebf5ff;color:#20598c}
+.fleet-manager{padding:clamp(18px,3vw,30px)}
+.fleet-manager>.section-heading{margin:0 0 12px}
+.fleet-manager .section-heading.compact h2{font-size:20px}
+.vehicle-list{margin-top:4px}
+.vehicle-list .admin-row{padding:14px 8px}
+.vehicle-list .admin-row-info strong{font-size:15px}
+.vehicle-list .admin-row-info span{font-size:13px}
+.admin-inline-form{padding:17px;margin:12px 0 16px;border:1px solid #d7e4f0;border-radius:12px;background:#f7faff}
+.vehicle-list>.admin-inline-form{margin:12px 8px 16px}
+.vehicle-entry{border-bottom:1px solid #e3eaf1}
+.vehicle-entry>.admin-row{border-bottom:0}
+.vehicle-title-line{display:flex;align-items:center;gap:9px;min-width:0}
+.vehicle-status{display:inline-flex;align-items:center;border-radius:20px;padding:3px 8px;font-size:11px!important;font-weight:700;white-space:nowrap}
+.vehicle-status.is-active{background:#e3edf7;color:#20598c}
+.vehicle-status.is-retired{background:#edf0f2;color:#687887}
+.vehicle-title-line strong{font-size:15px!important}
+.vehicle-maintenance-list{padding:0 12px 9px 22px;border-left:2px solid #d9e7f4;margin-left:12px}
+.vehicle-maintenance-list .admin-row{padding:8px 5px;border-bottom:1px dashed #dce5ed}
+.vehicle-maintenance-list .admin-row:last-child{border-bottom:0}
+.vehicle-maintenance-list .admin-row-info strong{font-size:13px}
+.vehicle-maintenance-list .admin-row-info span{font-size:12px}
+.booking-table-head,.request-table-head{display:grid;align-items:center;padding:8px 10px;border-top:1px solid #cbd7e2;border-bottom:1px solid #cbd7e2;background:#edf2f7;color:#52677d;font-size:12px;font-weight:700}
+.booking-table-head{grid-template-columns:minmax(180px,1fr) minmax(260px,2fr) minmax(130px,auto)}
+.request-table-head{grid-template-columns:130px auto minmax(170px,1fr) minmax(260px,1.6fr) minmax(320px,auto);gap:12px;padding-left:8px;padding-right:8px}
+.booking-workflow .booking-list{gap:0}
+.booking-workflow .booking-row{display:grid;grid-template-columns:minmax(180px,1fr) minmax(260px,2fr) minmax(130px,auto);align-items:center;gap:12px;padding:12px 10px;border:0;border-bottom:1px solid #d8e1e9;border-left:0;border-radius:0;background:transparent}
+.booking-workflow .booking-row:first-child{border-top:1px solid #d8e1e9}
+.booking-workflow .booking-row-main{gap:2px}
+.booking-workflow .booking-row-details{display:grid;gap:2px;color:#52677d}
+.booking-workflow .booking-row-details span{font-size:14px}
+.booking-workflow .booking-row-details small{color:#7a8997;font-size:12px}
+.booking-workflow .booking-row-end{justify-content:flex-end}
+.request-table-head{margin-top:4px}
+.admin-role-section .request-row,.admin-role-section .request-row:has(.status-pending){background:transparent!important}
+.vehicle-list .vehicle-entry{background:#fff}
+.booking-heading-tools{display:flex;align-items:center;gap:10px;flex:none}
+.vehicle-calendar-dialog{width:min(1040px,94vw);max-width:1040px;max-height:92vh;padding:0;border:0;border-radius:16px;background:transparent}
+.vehicle-calendar-dialog::backdrop{background:#14294388;backdrop-filter:blur(2px)}
+.vehicle-calendar-dialog>.admin-calendar{max-height:92vh;overflow:auto;margin:0;padding:clamp(17px,3vw,30px);border:1px solid var(--line);border-radius:16px}
+.calendar-filter{display:flex;align-items:center;justify-content:flex-end;gap:10px;margin-bottom:12px;color:var(--muted);font-size:14px;font-weight:600}
+.calendar-filter select{width:min(320px,65vw);background:#fff}
+.calendar-legend{display:flex;flex-wrap:wrap;gap:16px;margin:0 0 10px;color:#52677d;font-size:12px}
+.calendar-legend span:before{content:"";display:inline-block;width:9px;height:9px;margin-right:6px;border-radius:2px;background:#e3edf7}
+.calendar-legend .legend-maintenance:before{background:#e9eef7}
+.calendar-legend .legend-available:before{background:#f1f5f9;border:1px solid #ccd7e2}
+.request-sort-control{display:flex;grid-template-columns:none;align-items:center;gap:8px;color:var(--muted);font-size:13px;font-weight:600}
+.request-sort-control select{width:auto;min-width:190px;padding:8px 10px;background:#fff;font-size:13px}
+@media(max-width:1050px){.request-table-head{grid-template-columns:120px auto minmax(150px,1fr) minmax(230px,1.5fr)}.request-table-head span:last-child{display:none}}
+@media(max-width:680px){.booking-heading-tools{align-items:flex-end;flex-direction:column;gap:5px}.booking-heading-tools .button{min-height:34px;padding:6px 10px;font-size:13px}.booking-table-head{display:none}.booking-workflow .booking-row{grid-template-columns:1fr auto;align-items:start;gap:5px 10px}.booking-workflow .booking-row-main{grid-column:1;grid-row:1}.booking-workflow .booking-row-end{grid-column:2;grid-row:1}.booking-workflow .booking-row-details{grid-column:1/-1;grid-row:2}.request-table-head{display:none}.request-sort-control{align-items:flex-start;flex-direction:column}.request-sort-control select{width:100%}.vehicle-calendar-dialog{width:96vw}.vehicle-calendar-dialog>.admin-calendar{padding:14px}}
+@media(max-width:1050px){.admin-role-section .request-row{grid-template-columns:120px auto minmax(150px,1fr) minmax(230px,1.5fr)}.admin-role-section .request-actions{grid-column:3/-1;grid-row:2}.admin-role-section .last-reason{grid-column:3/-1}}
+@media(max-width:680px){.admin-role-section .request-row{grid-template-columns:1fr auto;gap:6px 10px;padding:13px 5px}.admin-role-section .request-number{grid-column:1;grid-row:1}.admin-role-section .request-top .status{grid-column:2;grid-row:1}.admin-role-section .request-row h3{grid-column:1/-1;grid-row:2}.admin-role-section .request-details{grid-column:1/-1;grid-row:3}.admin-role-section .request-actions{grid-column:1/-1;grid-row:4}.admin-role-section .last-reason{grid-column:1/-1}}
+@media(max-width:480px){.booking-workflow .form-actions{align-items:stretch}.booking-workflow .hint{align-self:center}.booking-workflow .booking-row{align-items:flex-start}.booking-workflow .booking-row-main span{font-size:13px}.booking-workflow .section-heading p,.admin-role-section>.section-heading p{font-size:14px}}
+.booking-history-mode-button{display:inline-flex;align-items:center;gap:6px;white-space:nowrap;color:#356c91;font-size:13px;font-weight:700}
+.booking-history-mode-button[aria-pressed=true]{color:#294c6b}
+.booking-history-icon{width:17px;height:17px;flex:0 0 17px;fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.7}
+.booking-audit-toggle[aria-expanded=true]{color:#405e79}
+.booking-audit-panel{grid-column:1/-1;min-width:0;border-left:3px solid #c9d8e5;margin:0 0 8px 2px;padding:4px 12px;color:#4b6278}
+.booking-audit-panel ol{display:grid;gap:8px;margin:4px 0;padding-left:22px}
+.booking-audit-panel li{padding-left:3px}
+.booking-audit-panel li strong,.booking-audit-panel li span{display:block;line-height:1.5}
+.booking-audit-panel li strong{font-size:13px;color:#294c6b}
+.booking-audit-panel li span{font-size:12px;overflow-wrap:anywhere}

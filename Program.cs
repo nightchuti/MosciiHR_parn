@@ -1,9 +1,11 @@
 using Microsoft.Data.SqlClient;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddHostedService<BookingExpiryWorker>();
 var app = builder.Build();
 app.UseDefaultFiles();
 app.UseStaticFiles();
+BookingApi.Map(app);
 
 app.MapGet("/api/database", async (IConfiguration config, CancellationToken token) =>
 {
